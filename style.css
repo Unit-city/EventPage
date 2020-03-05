@@ -1,0 +1,24 @@
+body{
+  background-color: lightblue;
+}
+h1{
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin:0;
+  padding: 20px;
+}
+#a1{
+  background-color: green;
+  color:white;
+}
+#a2{
+  color:red;
+}
+#a3{
+  background-color: yellow;
+}
+.box1{
+  text-align: center;
+  padding:20px;
+  margin:0;
+}
