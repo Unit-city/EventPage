@@ -1,11 +1,31 @@
 body{
   background-color: lightblue;
 }
-h1{
-  text-align: center;
-  border-bottom: 1px solid black;
-  margin:0;
-  padding: 20px;
+a:link{
+  text-decoration:none;
+  color:red;
+}
+a:visited{
+  color:blue;
+}
+a:hover{
+  background-color:yellow;
+}
+#hidden:hover{
+  text-align:center;
+  color:black;
+}
+#hidden{
+  color:lightblue;
+}
+#special_code{
+  width: 180px;
+}
+#luck{
+  color:black;
+}
+#hide{
+  text-align: right;
 }
 #a1{
   background-color: green;
@@ -17,8 +37,31 @@ h1{
 #a3{
   background-color: yellow;
 }
+#last{
+  padding:20px;
+}
 .box1{
   text-align: center;
   padding:20px;
   margin:0;
+}
+.b{
+  text-align: center;
+  padding: 15px 20px;
+}
+h1{
+  text-align:center;
+  border-bottom: 1px solid black;
+  margin:0;
+  padding: 20px;
+}
+div{
+  text-align: center;
+}
+ul{
+  margin:10px;
+  padding-left:30px;
+}
+ul li{
+  font-size:30px;
 }
