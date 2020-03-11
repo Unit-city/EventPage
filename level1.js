@@ -1,15 +1,2 @@
-alert('Hello');
-alert('난이도1이에요.');
-alert('진짜쉬워요.');
-var input = prompt('Q1) 우리 지구대 팀장님 이름은 뭘까요...?');
+eval(function(p,a,c,k,e,r){e=function(c){return c.toString(a)};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('0(\'7\');0(\'난이도1이에요.\');0(\'진짜쉬워요.\');8 2=9(\'a) 우리 지구대 팀장님 이름은 뭘까요...?\');b(2===\'정용환\'){0(\'정답입니다!\');0(\'다음 난이도로 갈게요.\');3.4.5="c.6"}d{0(\'틀렸어요.\');0(\'다시 풀어보세요!\');3.4.5="1.6"}',14,14,'alert||input|window|location|href|html|Hello|var|prompt|Q1|if|level2_home|else'.split('|'),0,{}))
 
-if(input==='정용환'){
-  alert('정답입니다!');
-  alert('다음 난이도로 갈게요.');
-  window.location.href="level2_home.html";
-}
-else{
-  alert('틀렸어요.');
-  alert('다시 풀어보세요!');
-  window.location.href="1.html";
-}
