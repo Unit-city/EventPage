@@ -3,7 +3,7 @@ var button = document.getElementById('btn');
 code.focus();
 
 button.onclick = function(){
-  if(code.value==='1234'){
+  if(code.value==='C05671'){
     window.location.href='1.html';
   }
   else{
