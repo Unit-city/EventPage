@@ -1,0 +1,49 @@
+@charset "UTF-8";
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif
+}
+ul,li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.w3-quarter img {
+  margin-bottom: -6px;
+  cursor: pointer
+}
+
+.w3-quarter img:hover {
+  opacity: 0.6;
+  transition: 0.3s
+}
+.slide_wrap{
+  position: relative;
+  width: 300px;
+  margin: 100px auto;
+}
+.slide_box{
+  width: 100%;
+  overflow-x: hidden;
+}
+.slide_list{
+  width: 18300px;
+  height: 300px;
+}
+.slide_content{
+  position: relative;
+  float: left;
+}
+.slide_content:after{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  content: '';
+  border: 1px solid rgba(0,0,0,0.5);
+}

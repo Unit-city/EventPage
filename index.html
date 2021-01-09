@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="./css/index.css">
+
+<body class="w3-light-grey">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+    <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PORTFOLIO</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+    <span class="w3-left w3-padding"><i>Our love story❤</i></span>
+    <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+    <div class="slide_wrap">
+      <div class="slide_box">
+        <ul class="slide_list">
+        </ul>
+      </div>
+    </div>
+    <!-- Photo grid -->
+    <div class="photo-main w3-row w3-grayscale-min">
+    </div>
+
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <button class="w3-bar-item w3-button w3-hover-black">«</button>
+        <button class="w3-bar-item w3-black w3-button photo-btn" id="1" onclick="btn_pageNum(this)">1</button>
+        <button class="w3-bar-item w3-button w3-hover-black photo-btn" id="2" onclick="btn_pageNum(this)">2</button>
+        <button class="w3-bar-item w3-button w3-hover-black photo-btn" id="3" onclick="btn_pageNum(this)">3</button>
+        <button class="w3-bar-item w3-button w3-hover-black photo-btn" id="4" onclick="btn_pageNum(this)">4</button>
+        <button class="w3-bar-item w3-button w3-hover-black">»</button>
+      </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0">
+      <span class="w3-button w3-black w3-xlarge w3-display-topright"  onclick="this.parentNode.style.display='none'">×</span>
+      <div class="model_img w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="blind"></p>
+        <input type="text" id="caption" onkeyup="enterkey()" style="width:100%;"/>
+      </div>
+    </div>
+
+    <!-- About section -->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+      <h4><b>Dear. Eun</b></h4>
+      <div class="w3-content w3-justify" style="max-width:600px">
+        <h4>안녕!</h4>
+        <p>이 페이지는 성은이랑 나랑 그 동안 쌓은 추억들 담아 놓은 곳이얌. 사진을 순서있게 정리하진 못했지만
+          볼수록 마음이 따스해지는(?) 그런 사진들 넣어봤어 헤헤❤❤<br>
+          우리 사귄지 오늘로써 216일인데 시간 정말 느리게 가기도 하고 빠르게 하기도 하고 그런거 같아!!
+          난 은이 만나서 참 행복하고 좋은 일 많이 생긴 거 같아서 너무 좋앙!!! *^^*
+          막 생각나서 이런거 만들어서 보여줘야겠다 하고 급하게 만든거라 여러가지 기능은 없지만 앞으로 시간 투자해서
+          여러가지 기능들 추가해 볼겡!! 사랑해 은!😘
+        </p>
+        <hr class="w3-opacity">
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-grey">
+      <div class="w3-row-padding">
+        <div class="w3-third">
+          <h3>INFO</h3>
+          <p>
+            A-Yo! sung-eun!!(스펠링 전에 알려줬는데 좀 까먹음! ㅎㅎ)<br />
+            I like you so much!!!
+          </p>
+        </div>
+
+        <div class="w3-third">
+          <h3>Rok</h3>
+          <ul class="w3-ul">
+            <li class="w3-padding-16 w3-hover-black">
+              <span class="w3-large">Age</span><br>
+              <span>27</span>
+            </li>
+            <li class="w3-padding-16 w3-hover-black">
+              <span class="w3-large">like</span><br>
+              <span>sung-eun Park!!!!!!!!!!!!!!!!</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="w3-third">
+          <h3>Eun</h3>
+          <ul class="w3-ul">
+            <li class="w3-padding-16 w3-hover-black">
+              <span class="w3-large">Age</span><br>
+              <span>21</span>
+            </li>
+            <li class="w3-padding-16 w3-hover-black">
+              <span class="w3-large">like</span><br>
+              <span>Rok!</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="w3-black w3-center w3-padding-24">Made by <a href="#" title="W3.CSS" target="_blank" class="w3-hover-opacity">Rok</a></div>
+
+    <!-- End page content -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
