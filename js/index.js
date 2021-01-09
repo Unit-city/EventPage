@@ -17,7 +17,7 @@ function loadedMainImage() {
     for(var j=0;j<3;j++){
         const img = new Image();
         img.src = "./img/"+idx+".jpg";
-        img.style = "width:327px; height:327px;";
+        img.style = "width:400px; height:400px;";
         img.onclick = function(){
           onClick(this);
         }
@@ -119,7 +119,7 @@ function btn_pageNum(element){
     for(var j=0;j<3;j++){
         const img = new Image();
         img.src = "./img/"+idx+".jpg";
-        img.style = "width:327px; height:327px;";
+        img.style = "width:400px; height:400px;";
         img.onclick = function(){
           onClick(this);
         }
