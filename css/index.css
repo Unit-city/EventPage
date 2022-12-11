@@ -34,6 +34,9 @@ ul,li{
   width: 18300px;
   height: 300px;
 }
+.slide_list:hover{
+  animation-play-state: paused;
+}
 .slide_content{
   position: relative;
   float: left;
